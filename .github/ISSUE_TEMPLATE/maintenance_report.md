@@ -1,42 +1,40 @@
 ---
-name: Maintenance Report
-about: Track maintenance, housekeeping, refactoring, or chore work
+name: Maintenance task
+about: Track refactoring, dependency updates, and housekeeping work
 title: "Maintenance: <short description>"
-labels: maintenance, needs-triage
+labels: maintenance
 assignees: ''
 ---
 
-## Maintenance Description
+## Maintenance Guidelines
 
-A clear and concise description of the maintenance task (refactor, dependency
-upgrade, cleanup, infra work, etc.).
+Use this template for maintenance, refactoring, or housekeeping work that does
+not introduce user-facing features or bug fixes.
 
-## Why It's Needed
+### Type of Maintenance
+- [ ] Dependency upgrade
+- [ ] Refactor
+- [ ] Tooling / CI improvement
+- [ ] Documentation cleanup
+- [ ] Other (describe below)
 
-Explain the motivation: tech debt, security, performance, readability, etc.
+### Motivation
+Why is this work needed? (technical debt, security, performance, clarity, …)
 
-## Affected Areas
+### Scope
+What will and will not be changed in this work?
 
-- File / module / service:
-- Related issues / PRs:
+### Risk / Compatibility
+- Are there any breaking changes? (yes / no)
+- How will tests verify the change?
+- Rollback plan if something goes wrong.
 
-## Proposed Approach
+### Priority
+Use keywords like `medium`, `normal`, `low`, or `minor` to nudge the automation
+toward an appropriate priority label.
 
-Describe the steps you plan to take or that should be taken.
-
-## Risk / Impact
-
-- Risk level: low / medium / high
-- Expected impact on users or downstream services:
-
-## Priority
-
-Indicate priority (use these keywords to help auto-triage):
-- critical / urgent / production / outage
-- important / high / blocking
-- medium / normal
-- low / nice-to-have / minor
-
-## Additional Context
-
-Add any other context that's helpful for reviewers.
+### Checklist
+- [ ] Scope confirmed with maintainers
+- [ ] All tests pass locally
+- [ ] CI is green
+- [ ] Documentation updated if needed

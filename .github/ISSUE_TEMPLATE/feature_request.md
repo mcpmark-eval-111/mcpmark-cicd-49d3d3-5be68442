@@ -1,42 +1,38 @@
 ---
-name: Feature Request (Epic)
-about: Suggest a new feature or large initiative for this project
-title: "Epic: <short description>"
-labels: epic, needs-triage
+name: Feature request (Epic)
+about: Propose a large feature that should be tracked as an Epic
+title: "Epic: <feature name>"
+labels: epic
 assignees: ''
 ---
 
-## Summary
+## Feature Request Process
 
-A clear and concise description of the feature or epic you would like to see.
+Thanks for proposing a new feature! Large features (Epics) are tracked through
+four phases. The automation will create one sub-issue per phase:
 
-## Motivation
+1. Requirements Analysis
+2. Design and Architecture
+3. Implementation
+4. Testing and Documentation
 
-Why is this feature important? What problem does it solve?
+### Problem Statement
+What user need or product gap does this address?
 
-## Proposed Solution
+### Proposed Solution
+A high-level description of the feature you would like to see.
 
-Describe the solution you would like to see implemented. Include design ideas,
-APIs, UI mockups, etc. when possible.
+### Acceptance Criteria
+- [ ] Criterion 1
+- [ ] Criterion 2
+- [ ] Criterion 3
 
-## Alternatives Considered
+### Priority / Impact
+Use keywords such as `important`, `high`, or `blocking` to influence the
+priority label assigned by automation.
 
-Describe any alternative solutions or features you've considered.
+### Alternatives Considered
+Other approaches you considered and why they were not chosen.
 
-## Acceptance Criteria
-
-- [ ] Requirement 1
-- [ ] Requirement 2
-- [ ] Requirement 3
-
-## Priority
-
-Indicate priority (use these keywords to help auto-triage):
-- critical / urgent / production / outage
-- important / high / blocking
-- medium / normal
-- low / nice-to-have / minor
-
-## Additional Context
-
-Add any other context, screenshots, or references about the feature request here.
+### Additional Context
+Mockups, links to discussions, or related issues.
